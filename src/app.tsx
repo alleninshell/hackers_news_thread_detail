@@ -17,9 +17,11 @@
  */
 import MainContent from './components/main-content'
 import Comments from './components/comments'
-import React from 'react'
+import React, { useState } from 'react'
+import UtilComments from '@/util/comments'
 
-export default function() {
+
+export default function () {
 	const mock = {
 		main: {
 			href: 'https://example.com', // 原文url
@@ -27,15 +29,19 @@ export default function() {
 			insite_href: 'https://insite.com?site=example', // 站内url
 			points: 100, // 得分
 			author: 'author',
-			time: Date.now()},
+			time: Date.now()
+		},
 		comments: []
 	}
 	/**
      * todo 实现获取main-content 和comments 的方法
      * 组装comments
      */
+	let pre: { id: Number, content: any }[] = UtilComments.getRoot()
+	const [rootComments, setRootComments] = useState(pre);
+
 	return (<>
-		<MainContent mock={mock.main}/>
-		<Comments comments={mock.comments} />
+		<MainContent mock={mock.main} />
+		<Comments comments={rootComments} />
 	</>)
 }
