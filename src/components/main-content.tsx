@@ -1,5 +1,5 @@
-import React from "react"
-
+import React, { useState } from "react"
+import Comments from '@/util/comments'
 export default function (props: { mock: any }) {
 	const mock = props.mock
 	/**
@@ -9,7 +9,7 @@ export default function (props: { mock: any }) {
 	const getDomain = (url: string): string => {
 		return url
 	}
-
+	const [textareaValue, settextareaValue] = useState("");
 
 	return (
 		<>
@@ -38,14 +38,14 @@ export default function (props: { mock: any }) {
 						<a>favorite</a>
 					</li>
 					<li>
-						<a>{}comments</a>
+						<a>comments</a>
 					</li>
 				</ul>
 			</div>
 			{/* 第三行 */}
-			<textarea />
+			<textarea value={textareaValue} onChange={e => settextareaValue(e.target.value)} />
 			{/* 第四行 */}
-			<button>add comment</button>
+			<button onClick={() => { console.log(textareaValue); Comments.addComment(true, textareaValue) }}>add comment</button>
 		</>
 	)
 }
