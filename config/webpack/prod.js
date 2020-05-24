@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-05-14 20:52:12
  * @LastEditors: liwenyu
  * @Description:
- * @FilePath: \web-pay-center\config\webpack\prod.js
+ * @FilePath: \hacker_news_thread_detail\config\webpack\prod.js
  */
 const merge = require('webpack-merge')
 const common = require('./common.js')

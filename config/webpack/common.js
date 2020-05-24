@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-05-14 16:55:47
  * @LastEditors: liwenyu
  * @Description:
- * @FilePath: \web-pay-center\config\webpack\common.js
+ * @FilePath: \hacker_news_thread_detail\config\webpack\common.js
  */
 const {join: pathJoin} = require('path')
 const {CheckerPlugin} = require('awesome-typescript-loader')

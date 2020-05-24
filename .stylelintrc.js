@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-05-14 20:23:44
  * @LastEditors: liwenyu
  * @Description:
- * @FilePath: \web-pay-center\.stylelintrc.js
+ * @FilePath: \hacker_news_thread_detail\.stylelintrc.js
  */
 module.exports = {
 	extends: ['stylelint-config-standard'],

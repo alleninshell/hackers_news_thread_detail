@@ -4,7 +4,7 @@
  * @LastEditTime: 2020-05-20 17:26:30
  * @LastEditors: liwenyu
  * @Description:
- * @FilePath: \web-pay-center\.eslintrc.js
+ * @FilePath: \hacker_news_thread_detail\.eslintrc.js
  */
 
 module.exports = {
