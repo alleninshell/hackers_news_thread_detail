@@ -1,0 +1,10 @@
+*.css
+*.less
+*.d.ts
+.gitignore
+config/
+node_modules/
+dist/
+test/
+build/
+script/

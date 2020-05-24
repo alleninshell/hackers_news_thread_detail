@@ -3,7 +3,7 @@
  */
 export default {
     Get(key: string) {
-        const stringContent = window.localStorage.getItem(key)
+        const stringContent = window.localStorage.getItem(key) as string
         try {
             return JSON.parse(stringContent)
         } catch (e) {

@@ -1,0 +1,7 @@
+{
+	"HTMLWhitespaceSensitivity": "ignore",
+	"bracketSpacing": false,
+	"singleQuote": true,
+	"semi": false,
+	"trailingComma": "none"
+}
